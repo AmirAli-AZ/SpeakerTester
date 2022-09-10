@@ -28,9 +28,7 @@ public class Main extends Application {
         leftSpeakerImageView.setFitHeight(45);
         leftSpeakerImageView.setPickOnBounds(true);
         leftSpeakerImageView.setCursor(Cursor.HAND);
-        leftSpeakerImageView.setOnMouseClicked(mouseEvent -> {
-            playAudio(AudioBalance.LEFT);
-        });
+        leftSpeakerImageView.setOnMouseClicked(mouseEvent -> playAudio(AudioBalance.LEFT));
         var leftSpeakerContainer = new VBox(3, leftSpeakerImageView, new Label("Left"));
         leftSpeakerContainer.setAlignment(Pos.CENTER);
 
@@ -39,9 +37,7 @@ public class Main extends Application {
         rightSpeakerImageView.setFitHeight(45);
         rightSpeakerImageView.setPickOnBounds(true);
         rightSpeakerImageView.setCursor(Cursor.HAND);
-        rightSpeakerImageView.setOnMouseClicked(mouseEvent -> {
-            playAudio(AudioBalance.RIGHT);
-        });
+        rightSpeakerImageView.setOnMouseClicked(mouseEvent -> playAudio(AudioBalance.RIGHT));
         var rightSpeakerContainer = new VBox(3, rightSpeakerImageView, new Label("Right"));
         rightSpeakerContainer.setAlignment(Pos.CENTER);
 
@@ -55,9 +51,7 @@ public class Main extends Application {
         speakerImageView.setFitHeight(50);
         speakerImageView.setPickOnBounds(true);
         speakerImageView.setCursor(Cursor.HAND);
-        speakerImageView.setOnMouseClicked(mouseEvent -> {
-            playAudio(AudioBalance.CENTER);
-        });
+        speakerImageView.setOnMouseClicked(mouseEvent -> playAudio(AudioBalance.CENTER));
 
         var center = new VBox(speakerImageView, new Label("Center"));
         center.setAlignment(Pos.CENTER);
